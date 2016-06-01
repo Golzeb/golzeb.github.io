@@ -8,7 +8,11 @@
   <script>
   //INIT SCRIPT
   window.onload = function() {
-    home = `<div class="inbox">
+    home = `<div class="header">
+      <h1>Rainbow Emu Hunters</h1>
+    </div>
+    <div class="box">
+    <div class="inbox">
       <h1 class="center">Welcome on our site!</h1>
       <br>
       <br>
@@ -21,9 +25,11 @@
       </div>
       <br>
       <br>
+    </div>
     </div>`;
 
-    team = `<div class="inboxMembers">
+    team = `<div class="box">
+    <div class="inboxMembers">
       <h1 class="center">Team Members</h1>
       <h4>
         <li>
@@ -62,9 +68,12 @@
         </div>
         </li>
         </h4>
+      </div>
       </div>`;
 
-    aboutus = `<div class="inbox">
+    aboutus = `
+    <div class="box>
+    <div class="inbox">
       <h1 class="center">About us</h1>
       <h4 class="center">Rainbow Emu Hunters is a team which was founded in 24th July 2015. <br>
         The main reason for making this team was to have fun. <br>
@@ -72,9 +81,11 @@
         We were present at FaceIt Challenge for 5v5 Summoner's Rift and lost in Quarter-Finals. <br>
         Now we are having a break in the competetive arena.
       </h4>
+    </div>
     </div>`;
 
-    contact = `<div class="inbox">
+    contact = `<div class="box">
+    <div class="inbox">
       <h1 class="center">Contact</h1>
       <h3 class="center">You can contact us here:</h3>
       <div class="listInbox">
@@ -82,11 +93,12 @@
       </div>
       <br>
       <br>
+    </div>
     </div>`;
 
     arrays = [];
     objects = document.getElementsByClassName("menuOptionContent");
-    box = document.getElementsByClassName("box")[0];
+    box = document.getElementsByClassName("more")[0];
     audio = document.getElementsByClassName("audio")[0];
     audio.volume = 0.2;
     audio.loop = true;
@@ -121,6 +133,7 @@
     <div class="menuOption"><a id="notactive" onclick="menuClick(this)" class="menuOptionContent" href="#contact">Contact</a></div>
   </div>
 
+  <div class="more">
   <div class="header">
       <h1>Rainbow Emu Hunters</h1>
   </div>
@@ -140,6 +153,7 @@
       <br>
       <br>
     </div>
+  </div>
   </div>
 
     <script>
