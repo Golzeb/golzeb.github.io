@@ -60,11 +60,12 @@ html {
   margin-bottom: 4;
 
 }
-.br {
+.black {
   color: white;
   font-family: 'Advent Pro', sans-serif;
   font-size: 40px;
   line-height: 40px;
+  letter-spacing: +1px;
   text-align: center;
   margin-top: 0;
 }
