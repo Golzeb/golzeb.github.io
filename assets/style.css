@@ -1,0 +1,61 @@
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  overflow: hidden;
+  z-index: 0;
+}
+#bg img {
+  z-index: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: scale(1.01);
+  min-width: 50%;
+  min-height: 50%;
+  webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.box {
+  z-index: 1;
+  margin: auto;
+  width: 600px;
+  height: 200px;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(20, 20, 20, 0.5);
+  font-size: 20px;
+}
+
+.is {
+  color: white;
+  z-index: inherit;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 85px;
+  letter-spacing: +4px;
+  line-height: 85px;
+  text-align: center;
+  margin-top: 30;
+  margin-bottom: 4;
+
+}
+.br {
+  color: white;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 0;
+}
