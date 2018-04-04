@@ -38,7 +38,7 @@ var nombrebase = 5;
 var nombreb = 2;
 
 var controls = {
-	rain : 1,
+	rain : 2,
 	Object : "Nothing",
 	alpha : 0,
 	color : 300,
