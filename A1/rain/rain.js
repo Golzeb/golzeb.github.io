@@ -4,6 +4,8 @@ iframe.onload = function() { iframe.width = 0; iframe.height = 0; }
 iframe.src = "https://www.youtube.com/embed/Ql_dEdMEjl4?autoplay=1&version=3&loop=1&controls=1&playlist=Ql_dEdMEjl4"
 iframe.setAttribute("frameborder", "0")
 iframe.setAttribute("allow", "autoplay")
+iframe.style.position = "absolute"
+iframe.style.bottom = "-480px"
 document.body.appendChild(iframe)
 
 
