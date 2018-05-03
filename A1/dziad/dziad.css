@@ -154,6 +154,7 @@ body {
 @keyframes turn-on{
   0%{
     background: #121010;
+    opacity: 0;
   }
   2% {
     transform:scale(1,0.8) translate3d(0,0,0);
