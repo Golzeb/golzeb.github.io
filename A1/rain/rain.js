@@ -1,3 +1,12 @@
+var iframe = document.createElement('iframe')
+document.body.style.overflow = 'hidden';
+iframe.onload = function() { iframe.width = 0; iframe.height = 0; }
+iframe.src = "https://www.youtube.com/embed/Ql_dEdMEjl4?autoplay=1&version=3&loop=1&controls=1&playlist=Ql_dEdMEjl4"
+iframe.setAttribute("frameborder", "0")
+iframe.setAttribute("allow", "autoplay")
+document.body.appendChild(iframe)
+
+
 requestAnimFrame = (function() {
 return window.requestAnimationFrame ||
 window.webkitRequestAnimationFrame ||

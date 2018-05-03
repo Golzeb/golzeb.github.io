@@ -165,3 +165,8 @@ body {
 .crt {
   animation: textShadow 1.6s infinite;
 }
+
+#player {
+    position: absolute;
+    top: 0;
+}
