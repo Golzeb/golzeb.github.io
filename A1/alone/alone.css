@@ -1,0 +1,17 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    filter: blur(5px);
+}
+
+.alone {
+    position: absolute;
+    top: -2%;
+    left: -5%;
+    
+    background-image:
+	linear-gradient(
+  	    rgba(255, 0, 0, 0.5),
+        rgba(255, 0, 0, 0.5)
+	),
+}

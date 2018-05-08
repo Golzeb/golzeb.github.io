@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    
+}
+
+.effect {
+    transform: scaleX(-1);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -11;
+    height: 100%;
+    width: 102%;
+    -webkit-filter: saturate(0.75);
+    filter: saturate(0.75);
+    z-index: 1;
+    background: url('smoking.gif'), #14892e;
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+.effect::after {
+    top: 0;
+    left: 0;
+    margin: 0px;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    -webkit-transform: rotateY(8.5deg);
+    transform: rotateY(8.5deg);
+    background: url('smoking.gif'), #791489;
+    background-blend-mode: lighten;
+    background-size: cover;
+    mix-blend-mode: darken;
+}
