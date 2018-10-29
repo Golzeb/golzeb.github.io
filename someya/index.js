@@ -43,7 +43,7 @@ function toggleL(what) {
         temp += "<ol class=\"list\">"
         for(i = 0; i < drop.get(what).length; i++)
         {
-            temp += "<li>" + drop.get(what)[i] + "</li>";     
+            temp += "<li>" + l_itemy[drop.get(what)[i]] + "</li>";     
         }
         temp += "<li>";
         temp += "<div class=\"spoiler-button\" id=\"spoiler-" + what + "-ulepszacze\" onclick=\"toggle('" + what + "-ulepszacze');\">[+]</div> Ulepszacze";
@@ -51,7 +51,7 @@ function toggleL(what) {
         temp += "<ol>";
         for(i = 0; i < ulepszacze.get(what).length; i++)
         {
-            temp += "<li>" + ulepszacze.get(what)[i] + "</li>";
+            temp += "<li>" + l_ulepszacze[ulepszacze.get(what)[i]] + "</li>";
         }
         temp += "</ol></div></li></ol>";
     }
@@ -61,24 +61,24 @@ function toggleL(what) {
             
 setDropUlepszacze("metin-cierpienia",
 //Drop
-["Zwój Błogosławieństwa", "Czerwona Mikstura(M)", "Niebieska Mikstura(M)", "Fioletowa Mikstura(Ś)", "Kamień Duszy +0", "Księga Taktyka (1)", "Księga Polimorfi (1)", "Księga Zapomnienia", "Peleryna Męstwa", "Dłoń Krytyka", "Dłoń Przebicia", "Zaczarowanie Przedmiotu (EXP)", "Zaczarowanie Przedmitu (PVP)", "Wzmocnienie Przedmiotu", "Teczka Kompetencji Magii", "Skrzynia Brońmistrza", "Skrzynia Zbrojmistrza", "Skrzynia Jubilerska", "Kufer Czaru", "Klucz Czaru"],
+[0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
 //Ulepszacze
-["Włókno Prozaidowe", "Pudełko", "Klepsydra", "Sól Fizjologiczna", "Tętnica Niedźwiedzia", "Morela", "Kawałek Szpuli", "Matarasu", "Gliniak", "Podręczniki Kowalskie", "Biała Wstęga", "Zwierciadło", "Księga Zaklęć", "Zaklęcie Kielinowe", "Grzebień", "Drewniana Tarcza", "Chiński Maret", "Czarna Tabletka", "Czarysz", "Biała Nić", "Kawałek Szubienicy", "Kompas Słoneczny"]);
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]);
 
 setDropUlepszacze("metin-walki", 
 //Drop
-["Zwój Błogosławieństwa", "Czerwona Mikstura(M)", "Niebieska Mikstura(M)", "Zielona Mikstura(M)", "Fioletowa Mikstura(Ś)", "Kamień Duszy +0", "Księga Taktyka (1)", "Księga Polimorfi (1)", "Księga Zapomnienia", "Peleryna Męstwa", "Dłoń Krytyka", "Dłoń Przebicia", "Zaczarowanie Przedmiotu (EXP)", "Zaczarowanie Przedmitu (PVP)", "Wzmocnienie Przedmiotu", "Teczka Kompetencji Magii", "Skrzynia Brońmistrza", "Skrzynia Zbrojmistrza", "Skrzynia Jubilerska", "Kufer Czaru", "Klucz Czaru"],
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
 //Ulepszacze
-["Włókno Prozaidowe", "Pudełko", "Klepsydra", "Sól Fizjologiczna", "Tętnica Niedźwiedzia", "Morela", "Kawałek Szpuli", "Matarasu", "Gliniak", "Podręczniki Kowalskie", "Biała Wstęga", "Zwierciadło", "Księga Zaklęć", "Zaklęcie Kielinowe", "Grzebień", "Drewniana Tarcza", "Chiński Maret", "Czarna Tabletka", "Czarysz", "Biała Nić", "Kawałek Szubienicy", "Kompas Słoneczny"]);
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]);
 
 setDropUlepszacze("metin-bitwy", 
 //Drop
-["Zwój Błogosławieństwa", "Czerwona Mikstura(M)", "Niebieska Mikstura(M)", "Zielona Mikstura(M)", "Fioletowa Mikstura(Ś)", "Kamień Duszy +0", "Księga Taktyka (1)", "Księga Polimorfi (1)", "Księga Zapomnienia", "Peleryna Męstwa", "Dłoń Krytyka", "Dłoń Przebicia", "Zaczarowanie Przedmiotu (EXP)", "Zaczarowanie Przedmitu (PVP)", "Wzmocnienie Przedmiotu", "Teczka Kompetencji Magii", "Skrzynia Brońmistrza", "Skrzynia Zbrojmistrza", "Skrzynia Jubilerska", "Kufer Czaru", "Klucz Czaru"],
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
 //Ulepszacze
-["Włókno Prozaidowe", "Pudełko", "Klepsydra", "Sól Fizjologiczna", "Tętnica Niedźwiedzia", "Morela", "Kawałek Szpuli", "Matarasu", "Gliniak", "Podręczniki Kowalskie", "Biała Wstęga", "Zwierciadło", "Księga Zaklęć", "Zaklęcie Kielinowe", "Grzebień", "Drewniana Tarcza", "Chiński Maret", "Czarna Tabletka", "Czarysz", "Biała Nić", "Kawałek Szubienicy", "Kompas Słoneczny"]);
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]);
 
 setDropUlepszacze("metin-chciwosci", 
 //Drop
-["Zwój Błogosławieństwa", "Czerwona Mikstura(M)", "Niebieska Mikstura(M)", "Zielona Mikstura(M)", "Fioletowa Mikstura(Ś)", "Kamień Duszy +1", "Księga Taktyka (1)", "Księga Polimorfi (1)", "Księga Zapomnienia", "Peleryna Męstwa", "Dłoń Krytyka", "Dłoń Przebicia", "Zaczarowanie Przedmiotu (EXP)", "Zaczarowanie Przedmitu (PVP)", "Wzmocnienie Przedmiotu", "Teczka Kompetencji Magii", "Skrzynia Brońmistrza", "Szeroka Skrzynia Brońmistrza", "Skrzynia Zbrojmistrza", "Szeroka Skrzynia Zbrojmistrza", "Szeroka Skrzynia Jubilerska", "Kufer Czaru", "Klucz Czaru"],
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
 //Ulepszacze
-["Włókno Prozaidowe", "Pudełko", "Klepsydra", "Sól Fizjologiczna", "Tętnica Niedźwiedzia", "Morela", "Kawałek Szpuli", "Matarasu", "Gliniak", "Podręczniki Kowalskie", "Biała Wstęga", "Zwierciadło", "Księga Zaklęć", "Zaklęcie Kielinowe", "Grzebień", "Drewniana Tarcza", "Chiński Maret", "Czarna Tabletka", "Czarysz", "Biała Nić", "Kawałek Szubienicy", "Kompas Słoneczny"]);
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 22, 17, 23, 18, 24, 19, 20, 21]);

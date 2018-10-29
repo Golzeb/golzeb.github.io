@@ -1,0 +1,52 @@
+Itemy
+
+0 - Zwój Błogosławieństwa
+1 - Czerwona Mikstura(M)
+2 - Niebieska Mikstura(M)
+3 - Zielona Mikstura(M)
+4 - Fioletowa Mikstura(Ś)
+5 - Kamień Duszy +0
+6 - Księga Taktyka (1)
+7 - Księga Polimorfi (1)
+8 - Księga Zapomnienia
+9 - Peleryna Męstwa
+10 - Dłoń Krytyka
+11 - Dłoń Przebicia
+12 - Zaczarowanie Przedmiotu (EXP)
+13 - Zaczarowanie Przedmitu (PVP)
+14 - Wzmocnienie Przedmiotu
+15 - Teczka Kompetencji MagiiI
+16 - Skrzynia Brońmistrza
+17 - Skrzynia Zbrojmistrza
+18 - Skrzynia Jubilerska
+19 - Kufer Czaru
+20 - Klucz Czaru
+21 - Kamień Duszy +1
+22 - Szeroka Skrzynia Brońmistrza
+23 - Szeroka Skrzynia Zbrojmistrza
+24 - Szeroka Skrzynia Jubilerska
+
+Ulepszacze
+
+0 - Włókno Prozaidowe
+1 - Pudełko
+2 - Klepsydra
+3 - Sól Fizjologiczna
+4 - Tętnica Niedźwiedzia
+5 - Morela
+6 - Kawałek Szpuli
+7 - Matarasu
+8 - Gliniak
+9 - Podręczniki Kowalskie
+10 - Biała Wstęga
+11 - Zwierciadło
+12 - Księga Zaklęć
+13 - Zaklęcie Kielinowe
+14 - Grzebień
+15 - Drewniana Tarcza
+16 - Chiński Maret
+17 - Czarna Tabletka
+18 - Czarysz
+19 - Biała Nić
+20 - Kawałek Szubienicy
+21 - Kompas Słoneczny

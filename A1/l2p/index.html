@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Ｎｏ　ｓｉｅｍａ</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+        <script type="text/javascript">
+            daty = []
+            wydarzenia = []
+            qindex = 0;
+            
+            function shuffle(array, array2) {
+                var counter = array.length, temp, temp2, index;
+
+                while (counter > 0) {
+                    index = Math.floor(Math.random() * counter);
+
+                    counter--;
+
+                    temp = array[counter];
+                    temp2 = array2[counter];
+
+                    array[counter] = array[index];
+                    array2[counter] = array2[index];
+
+                    array[index] = temp;
+                    array2[index] = temp2;
+                }
+            }
+            
+            function add(wydarzenie, data)
+            {
+                daty.push(data);
+                wydarzenia.push(wydarzenie);
+            }
+            
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+            
+            function nextQuestion()
+            {
+                qindex += 1
+                if(qindex == wydarzenia.length)
+                {
+                    shuffle(wydarzenia, daty);
+                    qindex = 0;
+                }   
+                document.getElementById("question").innerHTML = wydarzenia[qindex];
+            }
+            
+            function load()
+            {
+                add("Konfederacja barska", "1768");
+                add("I rozbiór Polski", "1772");
+                add("Konstytucja 3 maja", "1791");
+                add("Konfederacja targowicka", "1792");
+;               add("II rozbiór Polski", "1793");
+                add("Powstanie Kościuszkowskie", "1794");
+                add("III rozbiór Polski", "1795");
+                add("Legiony Polskie we Włoszech", "1797");
+                add("Utworzenie Księstwa Warszawskiego", "1807");
+                add("Utworzenie Królestwa Polskiego", "1815");
+                add("Powstanie listopadowe", "1830");
+                add("Powstanie krakowskie", "1846");
+                add("Powstanie wielkopolskie", "1848");
+                add("Powstanie styczniowe", "1863");
+                add("Odzyskanie niepodległości", "1918");
+                add("Bitwa warszawska", "1920");
+                add("Konstytucja marcowa", "1921");
+                add("Przewrót majowy Piłsudskiego", "1926");
+                add("Konstytucja kwietniowa", "1935");
+                add("Wybuch II WŚ", "1939");
+                add("Powstanie w getcie warszawskim", "1943");
+                add("Powstanie warszawskie", "1947");
+                add("Poznański czerwiec", "1956");
+                add("Wydarzenia marcowe", "1968");
+                add("Protesty robotnicze", "1970");
+                add("Porozumienie sierpniowe", "1980");
+                add("Stan wojenny", "1981");
+                add("Okrągły stół", "1989");
+                add("Unia w Krewie", "1385");
+                add("Pierwszy pokój toruński", "1411");
+                add("Drugi pokój toruński", "1466");
+                add("Odkrycie Ameryki", "1492");
+                add("Początek reformacji", "1517");
+                add("Hołd pruski", "1525");
+                add("Unia Lubelska", "1569");
+                add("Pierwsza wolna elekcja w Polsce", "1573");
+                add("Bitwa pod Kircholmem", "1605");
+                add("Bitwa pod Kłuszynem", "1610");
+                add("Bitwa pod Cecorą", "1620");
+                add("Powstanie Chmielnickiego", "1648");
+                add("Odsiecz Wiedeńska", "1683");
+                add("Chrzest Polski", "966");
+                add("Bitwa pod Cedynią", "972");
+                add("Zjazd w Gnieźnie", "1000");
+                add("Koronacja Bolesława Chrobrego", "1025");
+                add("Testament Krzywoustego", "1138");
+                add("Sprowadzenie Krzyżaków do Polski", "1226");
+                add("Bitwa pod Legnicą", "1241");
+                add("Koronacja Władysława Łokietka", "1320");
+                add("Bitwa pod Płowcami", "1331");
+                add("Pokój w Kaliszu z krzyżakami", "1343");
+                add("Założenie Akademii Krakowskiej", "1364");
+                
+                shuffle(wydarzenia, daty);
+                nextQuestion();
+            }
+            
+            window.onkeyup = async function(e) {
+                var key = e.keyCode ? e.keyCode : e.which;
+                
+                inner = document.getElementById("text").innerHTML;
+                
+                console.log(key);
+                
+                clicked = false;
+                
+                if(key >= 48 && key <= 57 && inner.length < daty[qindex].length + 1)
+                {
+                    document.getElementById("text").innerHTML = inner.replace("_", String.fromCharCode(key));
+                    clicked = true;
+                }
+                else if(key == 8 && inner.length != 0)
+                {
+                    document.getElementById("text").innerHTML = inner.replace("_", "");
+                    inner = document.getElementById("text").innerHTML;
+                    document.getElementById("text").innerHTML = inner.substr(0, inner.length-1);
+                    clicked = true;
+                }
+                else if(key == 13)
+                {
+                    if(document.getElementById("text").innerHTML == daty[qindex])
+                    {
+                        document.getElementById("text").style.color = "darkseagreen";
+                        await sleep(500);
+                        document.getElementById("text").style.color = "whitesmoke";
+                        document.getElementById("text").innerHTML = "";
+                        nextQuestion();
+                    }
+                    else {
+                        document.getElementById("text").style.color = "indianred";
+                        await sleep(500);
+                        document.getElementById("text").style.color = "whitesmoke"; 
+                    }
+                    clicked = true;
+                }
+                
+                if(document.getElementById("text").innerHTML.length < daty[qindex].length && clicked)
+                {
+                    document.getElementById("text").innerHTML += "_";       
+                }
+            }
+        </script>
+    </head>
+    <body onload="load()">
+        <div id="background-image"></div>
+        <div id="question"></div>
+        <div id="text">_</div>
+    </body>
+</html>
