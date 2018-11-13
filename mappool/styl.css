@@ -1,0 +1,138 @@
+body {
+    font-family: 'Exo 2', sans-serif;
+    padding: 10px;
+
+    overflow: hidden;
+    
+    background: linear-gradient(139deg, #e7a7ff, #ffb0e0, #ffa1a1);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:34% 0%}
+    50%{background-position:67% 100%}
+    100%{background-position:34% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:34% 0%}
+    50%{background-position:67% 100%}
+    100%{background-position:34% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:34% 0%}
+    50%{background-position:67% 100%}
+    100%{background-position:34% 0%}
+}
+
+
+table {
+    display: inline-block;
+    background-color:rgba(0, 0, 0, 0);
+}
+
+.picked {
+    filter: brightness(40%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.mapset {
+    min-height: 100px;
+    min-width: 460px;
+
+    border-radius: 20px;
+
+    color: whitesmoke;
+}
+
+.type {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.title {
+    height: 0px;
+    position: relative;
+    top: -60px;
+    left: 15px;
+
+    font-style: italic;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.holder {
+    min-width: 460px;
+}
+
+.artist {
+    height: 0px;
+    position: relative;
+    top: -80px;
+    left: 15px;
+
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.star-rating, .ar, .bpm, .length{
+    height: 0px;
+    width: 100px;
+    position: relative;
+    left: 340px;
+
+    font-size: 15px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.author {
+    height: 0px;
+    position: relative;
+    left: 17px;
+    top: -25px;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.star-rating {
+    top: -92px;
+}
+
+.ar {
+    top: -72px;
+}
+
+.bpm {
+    top: -52px;
+}
+
+.length {
+    top: -32px;
+}
+
+
+.background-image {
+    z-index: -1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    border-radius: 20px;
+    
+    width: 100%;
+    height: 100px;
+
+    background-size: cover;
+    
+    filter: brightness(70%);
+}
