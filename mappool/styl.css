@@ -1,8 +1,7 @@
 body {
     font-family: 'Exo 2', sans-serif;
     padding: 10px;
-
-    overflow: hidden;
+    overflow-x: hidden;
     
     background: linear-gradient(139deg, #e7a7ff, #ffb0e0, #ffa1a1);
     background-size: 600% 600%;
