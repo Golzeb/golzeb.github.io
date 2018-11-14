@@ -1,40 +1,28 @@
 body {
     font-family: 'Exo 2', sans-serif;
     padding: 10px;
-    overflow-x: hidden;
-    
-    background: linear-gradient(139deg, #e7a7ff, #ffb0e0, #ffa1a1);
-    background-size: 600% 600%;
 
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    overflow: hidden;
+
+    background-color: antiquewhite;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:34% 0%}
-    50%{background-position:67% 100%}
-    100%{background-position:34% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:34% 0%}
-    50%{background-position:67% 100%}
-    100%{background-position:34% 0%}
-}
-@keyframes AnimationName { 
-    0%{background-position:34% 0%}
-    50%{background-position:67% 100%}
-    100%{background-position:34% 0%}
-}
+.container {
+    display: flex;
 
+    max-width: 100vw;
+    max-height: 100vw;
 
-table {
-    display: inline-block;
-    background-color:rgba(0, 0, 0, 0);
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .picked {
     filter: brightness(40%);
+}
+
+span {
+    display: block;
 }
 
 a {
@@ -42,96 +30,72 @@ a {
 }
 
 .mapset {
-    min-height: 100px;
-    min-width: 460px;
+    padding: 12px 0;
+    margin: 5px;
 
     border-radius: 20px;
 
     color: whitesmoke;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+
+    display: flex;
+    width: 470px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .type {
-    width: 100%;
-    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+
+    width: 470px;
+
+    font-size: 3rem;
     text-align: center;
+
+    margin: 10px;
 }
 
-.title {
-    height: 0px;
-    position: relative;
-    top: -60px;
-    left: 15px;
+.left {
+    margin-left: 12px;
 
-    font-style: italic;
-    font-weight: 600;
-    font-size: 25px;
+    height: 100%;
+    width: auto;
+
+    float: left;
+    text-align: left;
+    vertical-align: top;
 }
 
-.holder {
-    min-width: 460px;
+.right {
+    margin-right: 12px;
+
+    height: 100%;
+    width: auto;
+
+    float: right;
 }
 
 .artist {
-    height: 0px;
-    position: relative;
-    top: -80px;
-    left: 15px;
-
     font-style: italic;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.25rem;
 }
 
-.star-rating, .ar, .bpm, .length{
-    height: 0px;
-    width: 100px;
-    position: relative;
-    left: 340px;
-
-    font-size: 15px;
-    text-align: right;
-    font-weight: bold;
+.title {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .author {
-    height: 0px;
-    position: relative;
-    left: 17px;
-    top: -25px;
-
-    font-size: 10px;
+    line-height: 20px;
+    font-size: 0.75rem;
     font-weight: bold;
 }
 
-.star-rating {
-    top: -92px;
-}
-
-.ar {
-    top: -72px;
-}
-
-.bpm {
-    top: -52px;
-}
-
-.length {
-    top: -32px;
-}
-
-
-.background-image {
-    z-index: -1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-
-    border-radius: 20px;
-    
-    width: 100%;
-    height: 100px;
-
-    background-size: cover;
-    
-    filter: brightness(70%);
+.star-rating, .ar, .bpm, .length{
+    font-size: 1rem;
+    text-align: right;
+    font-weight: bold;
 }
