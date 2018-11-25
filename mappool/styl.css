@@ -81,6 +81,12 @@ a {
     font-size: 1.5rem;
 }
 
+.diff {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.10rem;
+}
+
 .author {
     line-height: 20px;
     font-size: 0.75rem;
