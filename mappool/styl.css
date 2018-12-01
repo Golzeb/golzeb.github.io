@@ -55,6 +55,8 @@ a {
     height: 100%;
     width: auto;
 
+	white-space: nowrap;
+	
     float: left;
     text-align: left;
     vertical-align: top;
