@@ -159,4 +159,37 @@
 }
 .crt {
   animation: textShadow 1.6s infinite;
+  text-align: center;
+}
+
+body {
+  background: #590c50;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  display: inline-flex;
+  text-align: center;
+  text-decoration: none;
+  color: antiquewhite;
+  border: 2px solid antiquewhite;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+h1 {
+  text-align: center;
+  color: antiquewhite;
+  margin-bottom: 0px;
+}
+
+.smol {
+  align-content: center;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 15px;
 }
